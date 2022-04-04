@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    background-color: rgb(15, 15, 15);
+}
+.slider-container{
+    margin: 10px auto;
+    width: 300px;
+    height: 390px;
+    position: relative;
+    margin-top: 40px;
+}
+.slider-container img{
+    width: 300px;
+    height: 390px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+    border-radius: 6px;
+}
+.slider-container img.active{
+    opacity: 1;
+}
+.slider-container .slide-number{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: 20px;
+    z-index: 2;
+    border-radius: 6px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+.slider-control{
+    margin: auto;
+    width: 300px;
+}
+.slider-control{
+    display: flex;
+    justify-content: space-between;
+}
+.slider-control .prev,
+.next{
+    background-color:black;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.prev.disabled,
+.next.disabled{
+    background-color:rgb(53, 53, 53);
+    color: white;
+    cursor: auto;
+}
+#indicators{
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cuntr{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+#cuntr li{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cuntr li.active{
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 3px;
+    border-radius: 2px;
+    transition: opacity 1s;
+    color: #000;
+}
+#cuntr li.disabled{
+    background-color: rgb(29, 29, 29);
+    padding: 3px;
+    border-radius: 2px;
+    transition: opacity 1s;
+    color: rgb(48, 48, 48);
+}
