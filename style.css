@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(46, 46, 46);
 }
 .slider-container{
     margin: 10px auto;
