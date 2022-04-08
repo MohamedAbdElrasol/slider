@@ -1,6 +1,6 @@
 let images = Array.from(document.querySelectorAll(".slider-container img"));
 let numberSlide = images.length;
-let currSlide = 2;
+let currSlide = 1;
 let actorsNames =["Al Pacino","Ben Stiller","Patrick Stewart","Christoph Waltz","Robert De Niro"];
 let slideName = document.querySelector(".slide-number");
 let nextbtn = document.querySelector(".next");
